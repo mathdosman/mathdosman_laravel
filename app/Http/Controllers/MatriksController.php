@@ -9,6 +9,9 @@ use Illuminate\Support\Facades\Redirect;
 
 class MatriksController extends Controller
 {
+    public function materimatriks(){
+        return view('konten.10Matriks.materimatriks');
+    }
     public function matriks01(){
         if(empty(Auth::guard('siswa')->user()->nisn)){
             return view('konten.10Matriks.matriks01');
@@ -178,5 +181,18 @@ class MatriksController extends Controller
             } catch (\Exception $e) {
                 return Redirect::back()->with(['error'=>'Jawaban Gagal Disimpan']);
          }
+    }
+    // xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+    public function matriks06(){
+        if(empty(Auth::guard('siswa')->user()->nisn)){
+            return view('konten.10Matriks.matriks06');
+        }
+        elseif(!empty(Auth::guard('siswa')->user()->nisn))
+        {
+        $nisn = Auth::guard('siswa')->user()->nisn;
+        $materi = "matriks06";
+        $progress = DB::table('progres')->where('nisn',$nisn)->where('materi',$materi)->count();
+        return view('konten.10Matriks.matriks06', compact('progress'));
+        }
     }
 }

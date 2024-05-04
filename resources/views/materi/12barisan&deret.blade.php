@@ -15,6 +15,7 @@
     <a href="/barisangeometri" class="list-group-item list-group-item-action" aria-current="true"> Barisan Geometri </a>
     <a href="/deretgeometri" class="list-group-item list-group-item-action" aria-current="true"> Deret Geometri </a>
     <a href="/takhingga01" class="list-group-item list-group-item-action" aria-current="true"> Barisan dan Deret Geometri Tak Hingga </a>
+    <a href="/bd_latihan01" class="list-group-item list-group-item-action" aria-current="true"> Barisan dan Deret - LATIHAN 01 </a>
   </ol>
   </div>
 </div>

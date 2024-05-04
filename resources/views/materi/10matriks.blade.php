@@ -8,12 +8,15 @@
   <div class="offcanvas-body">
       <h1 class="text-success"> Matriks </h1>
         <ol class="list-group list-group-numbered">
-            <a href="#" class="list-group-item list-group-item-action" aria-current="true"> Materi </a>
+            <span class="fw-bold text-success">MATERI</span>
+            <a href="/materimatriks" class="list-group-item list-group-item-action" aria-current="true"> MATERI MATRIKS </a>
+            <br>
+            <span class="text-success"><b>LATIHAN SOAL</b></span>
             <a href="/matriks01" class="list-group-item list-group-item-action" aria-current="true"> Matriks- Paket 1 </a>
             <a href="/matriks02" class="list-group-item list-group-item-action" aria-current="true"> Matriks- Paket 2 </a>
             <a href="/matriks03" class="list-group-item list-group-item-action" aria-current="true"> Matriks- Paket 3 </a>
-            <a href="#" class="list-group-item list-group-item-action" aria-current="true"> Matriks- Paket 4 </a>
-            <a href="#" class="list-group-item list-group-item-action" aria-current="true"> Matriks- Paket 5 </a>
+            <a href="/matriks04" class="list-group-item list-group-item-action" aria-current="true"> Matriks- Paket 4 </a>
+            <a href="/matriks05" class="list-group-item list-group-item-action" aria-current="true"> Matriks- Paket 5 </a>
         </ol>
   </div>
 </div>

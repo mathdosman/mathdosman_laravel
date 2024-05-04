@@ -179,4 +179,38 @@ class BarisanDanDeretController extends Controller
                 return Redirect::back()->with(['error'=>'Jawaban Gagal Disimpan']);
          }
     }
+    // xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+    public function bd_latihan01(){
+        if(empty(Auth::guard('siswa')->user()->nisn)){
+            return view('konten.12BarisanDanDeret.BD_Latihan01');
+        }
+        elseif(!empty(Auth::guard('siswa')->user()->nisn))
+        {
+        $nisn = Auth::guard('siswa')->user()->nisn;
+        $materi = "bd_latihan01";
+        $progress = DB::table('progres')->where('nisn',$nisn)->where('materi',$materi)->count();
+        return view('konten.12BarisanDanDeret.BD_Latihan01', compact('progress'));
+        }
+    }
+    public function createbd_latihan01(){
+        $nisn = Auth::guard('siswa')->user()->nisn;
+        $kelas = Auth::guard('siswa')->user()->kelas;
+        $materi = "bd_latihan01";
+        $kategori = "Barisan dan Deret";
+        $kode = $materi."-".$nisn;
+
+        try {
+            $data =[
+                'nisn' => $nisn,
+                'kelas' => $kelas,
+                'materi' => $materi,
+                'kategori' => $kategori,
+                'kode_pengumpulan' =>$kode
+            ];
+            DB::table('progres')->insert($data);
+                return Redirect::back()->with(['success'=>'Jawaban Berhasil Disimpan ' ]);
+            } catch (\Exception $e) {
+                return Redirect::back()->with(['error'=>'Jawaban Gagal Disimpan']);
+         }
+    }
 }

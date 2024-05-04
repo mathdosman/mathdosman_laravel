@@ -7,6 +7,7 @@ use App\Http\Controllers\LimitController;
 use App\Http\Controllers\MatriksController;
 use App\Http\Controllers\PeluangController;
 use App\Http\Controllers\TurunanController;
+use App\Http\Controllers\IntegralController;
 use App\Http\Controllers\TransformasiController;
 use App\Http\Controllers\BarisanDanDeretController;
 use App\Http\Controllers\PersamaanKuadratController;
@@ -48,6 +49,7 @@ Route::get('/persamaanKuadrat02',[PersamaanKuadratController::class, 'persamaanK
 
 
 // 10 MATRIKS
+Route::get('/materimatriks',[MatriksController::class, 'materimatriks']);
 Route::get('/matriks01',[MatriksController::class, 'matriks01']);
 Route::get('/creatematriks01',[MatriksController::class, 'creatematriks01']);
 Route::get('/matriks02',[MatriksController::class, 'matriks02']);
@@ -58,6 +60,8 @@ Route::get('/matriks04',[MatriksController::class, 'matriks04']);
 Route::get('/creatematriks04',[MatriksController::class, 'creatematriks04']);
 Route::get('/matriks05',[MatriksController::class, 'matriks05']);
 Route::get('/creatematriks05',[MatriksController::class, 'creatematriks05']);
+// Route::get('/matriks06',[MatriksController::class, 'matriks06']);
+// Route::get('/creatematriks06',[MatriksController::class, 'creatematriks06']);
 
 
 // 11 Transformasi
@@ -87,6 +91,8 @@ Route::get('/deretgeometri',[BarisanDanDeretController::class, 'deretGeometri'])
 Route::get('/create_deret_geometri',[BarisanDanDeretController::class, 'createderetGeometri']);
 Route::get('/takhingga01',[BarisanDanDeretController::class, 'takhingga01']);
 Route::get('/createtakhingga01',[BarisanDanDeretController::class, 'createtakhingga01']);
+Route::get('/bd_latihan01',[BarisanDanDeretController::class, 'bd_latihan01']);
+Route::get('/createbd_latihan01',[BarisanDanDeretController::class, 'createbd_latihan01']);
 
 // 13 LIMIT FUNGSI ALJABAR
 Route::get('/limit01',[LimitController::class, 'limit01']);
@@ -94,11 +100,23 @@ Route::get('/createlimit01',[LimitController::class, 'createlimit01']);
 Route::get('/limit02',[LimitController::class, 'limit02']);
 Route::get('/createlimit02',[LimitController::class, 'createlimit02']);
 
-// 14 LIMIT FUNGSI ALJABAR
+// 14 TURUNAN FUNGSI ALJABAR
+Route::get('/materiturunan',[TurunanController::class, 'materiturunan']);
 Route::get('/turunan01',[TurunanController::class, 'turunan01']);
 Route::get('/createturunan01',[TurunanController::class, 'createturunan01']);
 Route::get('/turunan02',[TurunanController::class, 'turunan02']);
 Route::get('/createturunan02',[TurunanController::class, 'createturunan02']);
+Route::get('/persamaangarissinggung',[TurunanController::class, 'persamaangarissinggung']);
+Route::get('/createpersamaangarissinggung',[TurunanController::class, 'createpersamaangarissinggung']);
+
+
+// 15 INTEGRAL
+Route::get('/integral01',[IntegralController::class, 'integral01']);
+Route::get('/create_integral01',[IntegralController::class, 'create_integral01']);
+Route::get('/integral02',[IntegralController::class, 'integral02']);
+Route::get('/create_integral02',[IntegralController::class, 'create_integral02']);
+Route::get('/integral03',[IntegralController::class, 'integral03']);
+Route::get('/create_integral03',[IntegralController::class, 'create_integral03']);
 
 // 36PELUANG
 Route::get('/peluang01',[PeluangController::class, 'peluang01']);

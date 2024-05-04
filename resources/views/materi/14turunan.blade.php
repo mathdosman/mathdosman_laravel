@@ -8,8 +8,10 @@
   <div class="offcanvas-body">
       <h1 class="text-success"> Limit Aljabar Fungsi </h1>
         <ol class="list-group list-group-numbered">
+            <a href="/materiturunan" class="list-group-item list-group-item-action" aria-current="true"> Materi Turunan Aljabar Fungsi</a>
             <a href="/turunan01" class="list-group-item list-group-item-action" aria-current="true"> Turunan Aljabar Fungsi- Paket 1 + Pembahasan</a>
             <a href="/turunan02" class="list-group-item list-group-item-action" aria-current="true"> Turunan Aljabar Fungsi- Paket 2 + Pembahasan</a>
+            <a href="/persamaangarissinggung" class="list-group-item list-group-item-action" aria-current="true"> Persamaan Garis Singgung + Pembahasan</a>
         </ol>
   </div>
 </div>

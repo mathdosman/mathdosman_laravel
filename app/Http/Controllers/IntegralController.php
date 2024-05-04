@@ -7,38 +7,26 @@ use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Redirect;
 
-class TurunanController extends Controller
+class IntegralController extends Controller
 {
-    public function materiturunan(){
-        if(empty(Auth::guard('siswa')->user()->nisn)){
-            return view('konten.14Turunan.materiturunan');
-        }
-        elseif(!empty(Auth::guard('siswa')->user()->nisn))
-        {
-        $nisn = Auth::guard('siswa')->user()->nisn;
-        $materi = "turunan01";
-        $progress = DB::table('progres')->where('nisn',$nisn)->where('materi',$materi)->count();
-        return view('konten.14Turunan.materiturunan', compact('progress'));
-        }
-    }
     // xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
-    public function turunan01(){
+    public function integral01(){
         if(empty(Auth::guard('siswa')->user()->nisn)){
-            return view('konten.14Turunan.turunan01');
+            return view('konten.15Integral.integral01');
         }
         elseif(!empty(Auth::guard('siswa')->user()->nisn))
         {
         $nisn = Auth::guard('siswa')->user()->nisn;
-        $materi = "turunan01";
+        $materi = "integral01";
         $progress = DB::table('progres')->where('nisn',$nisn)->where('materi',$materi)->count();
-        return view('konten.14Turunan.turunan01', compact('progress'));
+        return view('konten.15Integral.integral01', compact('progress'));
         }
     }
-    public function createturunan01(){
+    public function create_integral01(){
         $nisn = Auth::guard('siswa')->user()->nisn;
         $kelas = Auth::guard('siswa')->user()->kelas;
-        $materi = "turunan01";
-        $kategori = "Turunan";
+        $materi = "integral01";
+        $kategori = "Integral";
         $kode = $materi."-".$nisn;
 
         try {
@@ -56,23 +44,23 @@ class TurunanController extends Controller
          }
     }
     // xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
-    public function turunan02(){
+    public function integral02(){
         if(empty(Auth::guard('siswa')->user()->nisn)){
-            return view('konten.14Turunan.turunan02');
+            return view('konten.15Integral.integral02');
         }
         elseif(!empty(Auth::guard('siswa')->user()->nisn))
         {
         $nisn = Auth::guard('siswa')->user()->nisn;
-        $materi = "turunan02";
+        $materi = "integral02";
         $progress = DB::table('progres')->where('nisn',$nisn)->where('materi',$materi)->count();
-        return view('konten.14Turunan.turunan02', compact('progress'));
+        return view('konten.15Integral.integral02', compact('progress'));
         }
     }
-    public function createturunan02(){
+    public function create_integral02(){
         $nisn = Auth::guard('siswa')->user()->nisn;
         $kelas = Auth::guard('siswa')->user()->kelas;
-        $materi = "turunan02";
-        $kategori = "Turunan";
+        $materi = "integral02";
+        $kategori = "Integral";
         $kode = $materi."-".$nisn;
 
         try {
@@ -90,23 +78,23 @@ class TurunanController extends Controller
          }
     }
     // xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
-    public function persamaangarissinggung(){
+    public function integral03(){
         if(empty(Auth::guard('siswa')->user()->nisn)){
-            return view('konten.14Turunan.prsgrssinggung');
+            return view('konten.15Integral.integral03');
         }
         elseif(!empty(Auth::guard('siswa')->user()->nisn))
         {
         $nisn = Auth::guard('siswa')->user()->nisn;
-        $materi = "prs_grs_singgung01";
+        $materi = "integral03";
         $progress = DB::table('progres')->where('nisn',$nisn)->where('materi',$materi)->count();
-        return view('konten.14Turunan.prsgrssinggung', compact('progress'));
+        return view('konten.15Integral.integral03', compact('progress'));
         }
     }
-    public function createpersamaangarissinggung(){
+    public function create_integral03(){
         $nisn = Auth::guard('siswa')->user()->nisn;
         $kelas = Auth::guard('siswa')->user()->kelas;
-        $materi = "prs_grs_singgung01";
-        $kategori = "Turunan";
+        $materi = "integral03";
+        $kategori = "Integral";
         $kode = $materi."-".$nisn;
 
         try {

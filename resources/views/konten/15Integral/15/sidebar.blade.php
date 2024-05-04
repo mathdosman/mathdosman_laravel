@@ -69,54 +69,42 @@
                   </span>
                 </a>
                 <hr>
-                <a class="nav-link {{ request()-> is('barisanaritmetika') ? 'text-warning' : ''}}" href="/barisanaritmetika" >
+                {{-- <span class="ms-3 fw-bold text-success">MATERI</span>
+                <a class="nav-link {{ request()-> is('materiturunan') ? 'text-warning' : ''}} " href="/materiturunan" >
                   <span class="nav-link-icon d-md-none d-lg-inline-block">
                     <svg xmlns="http://www.w3.org/2000/svg" class="icon" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M5 12l-2 0l9 -9l9 9l-2 0" /><path d="M5 12v7a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-7" /><path d="M9 21v-6a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v6" /></svg>
                   </span>
                   <span class="nav-link-title">
-                    Barisan Aritmetika
+                    Materi Integral
                   </span>
                 </a>
-                <a class="nav-link {{ request()-> is('deretaritmetika') ? 'text-warning' : ''}}" href="/deretaritmetika" >
+                <br> --}}
+                <span class="ms-3 fw-bold text-success">LATIHAN SOAL</span>
+                <a class="nav-link {{ request()-> is('integral01') ? 'text-warning' : ''}}" href="/integral01" >
                   <span class="nav-link-icon d-md-none d-lg-inline-block">
                     <svg xmlns="http://www.w3.org/2000/svg" class="icon" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M5 12l-2 0l9 -9l9 9l-2 0" /><path d="M5 12v7a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-7" /><path d="M9 21v-6a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v6" /></svg>
                   </span>
                   <span class="nav-link-title">
-                    Deret Aritmetika
+                    Integral - Latihan 01 + Pembahasan
                   </span>
                 </a>
-                <a class="nav-link {{ request()-> is('barisangeometri') ? 'text-warning' : ''}}" href="/barisangeometri" >
+                <a class="nav-link {{ request()-> is('integral02') ? 'text-warning' : ''}}" href="/integral02" >
                   <span class="nav-link-icon d-md-none d-lg-inline-block">
                     <svg xmlns="http://www.w3.org/2000/svg" class="icon" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M5 12l-2 0l9 -9l9 9l-2 0" /><path d="M5 12v7a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-7" /><path d="M9 21v-6a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v6" /></svg>
                   </span>
                   <span class="nav-link-title">
-                    Barisan Geometri
+                    Integral - Latihan 02 + Pembahasan
                   </span>
                 </a>
-                <a class="nav-link {{ request()-> is('deretgeometri') ? 'text-warning' : ''}}" href="/deretgeometri" >
+                <a class="nav-link {{ request()-> is('integral03') ? 'text-warning' : ''}}" href="/integral03" >
                   <span class="nav-link-icon d-md-none d-lg-inline-block">
                     <svg xmlns="http://www.w3.org/2000/svg" class="icon" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M5 12l-2 0l9 -9l9 9l-2 0" /><path d="M5 12v7a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-7" /><path d="M9 21v-6a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v6" /></svg>
                   </span>
                   <span class="nav-link-title">
-                    Deret Geometri
+                    Integral - Latihan 03 + Pembahasan
                   </span>
                 </a>
-                <a class="nav-link {{ request()-> is('takhingga01') ? 'text-warning' : ''}}" href="/takhingga01" >
-                  <span class="nav-link-icon d-md-none d-lg-inline-block">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="icon" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M5 12l-2 0l9 -9l9 9l-2 0" /><path d="M5 12v7a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-7" /><path d="M9 21v-6a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v6" /></svg>
-                  </span>
-                  <span class="nav-link-title">
-                    Barisan dan Deret Geometri Tak Hingga
-                  </span>
-                </a>
-                <a class="nav-link {{ request()-> is('bd_latihan01') ? 'text-warning' : ''}}" href="/bd_latihan01" >
-                  <span class="nav-link-icon d-md-none d-lg-inline-block">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="icon" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M5 12l-2 0l9 -9l9 9l-2 0" /><path d="M5 12v7a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-7" /><path d="M9 21v-6a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v6" /></svg>
-                  </span>
-                  <span class="nav-link-title">
-                    Barisan dan Deret - LATIHAN 01
-                  </span>
-                </a>
+
               </li>
 
             </ul>
