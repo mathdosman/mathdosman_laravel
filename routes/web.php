@@ -7,6 +7,7 @@ use App\Http\Controllers\LimitController;
 use App\Http\Controllers\MatriksController;
 use App\Http\Controllers\PeluangController;
 use App\Http\Controllers\TurunanController;
+use App\Http\Controllers\EksponenController;
 use App\Http\Controllers\IntegralController;
 use App\Http\Controllers\TransformasiController;
 use App\Http\Controllers\BarisanDanDeretController;
@@ -117,6 +118,25 @@ Route::get('/integral02',[IntegralController::class, 'integral02']);
 Route::get('/create_integral02',[IntegralController::class, 'create_integral02']);
 Route::get('/integral03',[IntegralController::class, 'integral03']);
 Route::get('/create_integral03',[IntegralController::class, 'create_integral03']);
+
+
+// 25 EKSPONEN
+Route::get('/materieksponen',[EksponenController::class, 'materieksponen']);
+Route::get('/eksponen01',[EksponenController::class, 'eksponen01']);
+Route::get('/create_eksponen01',[EksponenController::class, 'create_eksponen01']);
+Route::get('/eksponen02',[EksponenController::class, 'eksponen02']);
+Route::get('/create_eksponen02',[EksponenController::class, 'create_eksponen02']);
+Route::get('/eksponen03',[EksponenController::class, 'eksponen03']);
+Route::get('/create_eksponen03',[EksponenController::class, 'create_eksponen03']);
+Route::get('/eksponen04',[EksponenController::class, 'eksponen04']);
+Route::get('/create_eksponen04',[EksponenController::class, 'create_eksponen04']);
+Route::get('/eksponen05',[EksponenController::class, 'eksponen05']);
+Route::get('/create_eksponen05',[EksponenController::class, 'create_eksponen05']);
+Route::get('/eksponen06',[EksponenController::class, 'eksponen06']);
+Route::get('/create_eksponen06',[EksponenController::class, 'create_eksponen06']);
+Route::get('/eksponen07',[EksponenController::class, 'eksponen07']);
+Route::get('/create_eksponen07',[EksponenController::class, 'create_eksponen07']);
+
 
 // 36PELUANG
 Route::get('/peluang01',[PeluangController::class, 'peluang01']);
