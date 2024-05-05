@@ -8,7 +8,7 @@
     <div class="page">
 
     {{-- GANTI --}}
-        @include('konten.06persamaankuadrat.06.sidebar')
+        @include('sidebar')
 
       <!-- Navbar -->
         @include('konten.00semuamateri.topnav')
@@ -24,7 +24,7 @@
     </div>
 
    {{-- GANTI --}}
-    @include('konten.06persamaankuadrat.06.script')
+    @include('script')
 
   </body>
 </html>

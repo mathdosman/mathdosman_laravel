@@ -2,7 +2,7 @@
 
 
 <script>
-    const scriptURL = 'xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx';
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbw3ucLIBdBTnwkwMatakaOsjTwvIomWmAA2yEspRzpcDjw_CwktqaR-5fzM5NRNIIeLHQ/exec';
     const form = document.forms['input-form'];
     const btnKirim = document.querySelector('.btn-kirim');
     const btnBukti = document.querySelector('.btn-bukti');

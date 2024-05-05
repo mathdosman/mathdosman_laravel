@@ -9,6 +9,7 @@ use App\Http\Controllers\PeluangController;
 use App\Http\Controllers\TurunanController;
 use App\Http\Controllers\EksponenController;
 use App\Http\Controllers\IntegralController;
+use App\Http\Controllers\LogaritmaController;
 use App\Http\Controllers\TransformasiController;
 use App\Http\Controllers\BarisanDanDeretController;
 use App\Http\Controllers\PersamaanKuadratController;
@@ -137,6 +138,14 @@ Route::get('/eksponen06',[EksponenController::class, 'eksponen06']);
 Route::get('/create_eksponen06',[EksponenController::class, 'create_eksponen06']);
 Route::get('/eksponen07',[EksponenController::class, 'eksponen07']);
 Route::get('/create_eksponen07',[EksponenController::class, 'create_eksponen07']);
+
+
+// 26 LOGARITMA
+Route::get('/materilogaritmadasar',[LogaritmaController::class, 'materilogaritmadasar']);
+Route::get('/logaritma01',[LogaritmaController::class, 'logaritma01']);
+Route::get('/create_logaritma01',[LogaritmaController::class, 'create_logaritma01']);
+Route::get('/logaritma02',[LogaritmaController::class, 'logaritma02']);
+Route::get('/create_logaritma02',[LogaritmaController::class, 'create_logaritma02']);
 
 
 // 36PELUANG

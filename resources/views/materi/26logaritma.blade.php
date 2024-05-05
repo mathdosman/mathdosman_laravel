@@ -10,9 +10,12 @@
       LOGARITMA
     </h1>
   <ol class="list-group list-group-numbered">
-    <a href="/kumpulanSoal/logaritma/Uraian-Logaritma-dasar.html" class="list-group-item list-group-action">Definisi Logaritma + Soal Dasar</a>
-    <a href="/kumpulanSoal/logaritma/01-bentuk-umum-definisi-dan-sifat-logaritma.html" class="list-group-item list-group-action">Definisi dan sifat logaritma</a>
-    <a href="/kumpulanSoal/logaritma/02-persamaan-logaritma.html" class="list-group-item list-group-action">Persamaan Logaritma</a>
+    <span class="text-success fw-bold ms-3">MATERI</span>
+    <a href="/materilogaritmadasar" class="list-group-item list-group-action">Definisi Logaritma + Soal Dasar</a>
+    <br>
+    <span class="text-success fw-bold ms-3">LATIHAN SOAL</span>
+    <a href="/logaritma01" class="list-group-item list-group-action">Definisi dan sifat logaritma</a>
+    <a href="/logaritma02" class="list-group-item list-group-action">Persamaan Logaritma</a>
   </ol>
   </div>
 </div>
