@@ -96,6 +96,7 @@ Route::get('/bd_latihan01',[BarisanDanDeretController::class, 'bd_latihan01']);
 Route::get('/createbd_latihan01',[BarisanDanDeretController::class, 'createbd_latihan01']);
 
 // 13 LIMIT FUNGSI ALJABAR
+Route::get('/materilimit',[LimitController::class, 'materilimit']);
 Route::get('/limit01',[LimitController::class, 'limit01']);
 Route::get('/createlimit01',[LimitController::class, 'createlimit01']);
 Route::get('/limit02',[LimitController::class, 'limit02']);

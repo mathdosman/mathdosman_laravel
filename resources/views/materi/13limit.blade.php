@@ -8,6 +8,10 @@
   <div class="offcanvas-body">
       <h1 class="text-success"> Limit Aljabar Fungsi </h1>
         <ol class="list-group list-group-numbered">
+            <span class="fw-bold text-success">MATERI</span>
+            <a href="/materilimit" class="list-group-item list-group-item-action" aria-current="true"> Materi Limit</a>
+            <br>
+            <span class="fw-bold text-success">LATIHAN SOAL</span>
             <a href="/limit01" class="list-group-item list-group-item-action" aria-current="true"> Limit Aljabar Fungsi- Paket 1 + Pembahasan</a>
             <a href="/limit02" class="list-group-item list-group-item-action" aria-current="true"> Limit Aljabar Fungsi- Paket 2 + Pembahasan</a>
             <a href="/limit03" class="list-group-item list-group-item-action" aria-current="true"> Limit Aljabar Fungsi- Paket 3 </a>

@@ -9,6 +9,9 @@ use Illuminate\Support\Facades\Redirect;
 
 class LimitController extends Controller
 {
+    public function materilimit(){
+        return view('konten.13LimitALjabarFungsi.materilimit');
+    }
     // xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
     public function limit01(){
         if(empty(Auth::guard('siswa')->user()->nisn)){
