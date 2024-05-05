@@ -75,9 +75,12 @@
                 <button type="button" class="list-group-item list-group-item-action">38. Statistik Inferensial</button>
                 <button type="button" class="list-group-item list-group-item-action">39. Bunga Tunggal/Majemuk & Anuitas</button>
 
-                <a href="/PASdanPAT/index.html" style="text-decoration: none"> <button type="button" class="list-group-item list-group-item-action fw-bold text-danger">40. PAS dan PAT Dosman</button> </a>
-                <a href="/olimpiade/index.html" style="text-decoration: none"> <button type="button" class="list-group-item list-group-item-action fw-bold text-primary">41. SOAL OLIMPIADE</button> </a>
-                <a href="/akm/index.html" style="text-decoration: none"> <button type="button" class="list-group-item list-group-item-action fw-bold text-success">42. SOAL-SOAL AKM (Asesmen Kompetensi Minimal)</button> </a>
+                @include('materi.40kelas_X')
+                @include('materi.41kelas_XI')
+                @include('materi.42kelas_XII')
+
+                <a href="/olimpiade/index.html" style="text-decoration: none"> <button type="button" class="list-group-item list-group-item-action fw-bold text-primary"> SOAL OLIMPIADE</button> </a>
+                <a href="/akm/index.html" style="text-decoration: none"> <button type="button" class="list-group-item list-group-item-action fw-bold text-success"> SOAL-SOAL AKM (Asesmen Kompetensi Minimal)</button> </a>
               </div>
             </div>
           </div>

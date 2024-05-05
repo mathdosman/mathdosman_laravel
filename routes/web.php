@@ -4,12 +4,16 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AuthController;
 use App\Http\Controllers\LuarController;
 use App\Http\Controllers\LimitController;
+use App\Http\Controllers\KelasXController;
+use App\Http\Controllers\KelasXIController;
 use App\Http\Controllers\MatriksController;
 use App\Http\Controllers\PeluangController;
 use App\Http\Controllers\TurunanController;
 use App\Http\Controllers\EksponenController;
 use App\Http\Controllers\IntegralController;
+use App\Http\Controllers\KelasXIIController;
 use App\Http\Controllers\LogaritmaController;
+use App\Http\Controllers\PolinomialController;
 use App\Http\Controllers\TransformasiController;
 use App\Http\Controllers\BarisanDanDeretController;
 use App\Http\Controllers\PersamaanKuadratController;
@@ -148,6 +152,29 @@ Route::get('/logaritma02',[LogaritmaController::class, 'logaritma02']);
 Route::get('/create_logaritma02',[LogaritmaController::class, 'create_logaritma02']);
 
 
+// 32 POLINOMIAL
+Route::get('/polinomial01',[PolinomialController::class, 'polinomial01']);
+Route::get('/create_polinomial01',[PolinomialController::class, 'create_polinomial01']);
+
+
 // 36PELUANG
 Route::get('/peluang01',[PeluangController::class, 'peluang01']);
 Route::get('/createpeluang01',[PeluangController::class, 'createpeluang01']);
+
+// 40 KELAS X
+Route::get('/10patwajib2023',[KelasXController::class, 'patwajib2023']);
+Route::get('/10prediksi01',[KelasXController::class, 'prediksi01']);
+Route::get('/10prediksi02',[KelasXController::class, 'prediksi02']);
+
+// 41 KELAS XI
+Route::get('/11patwajib2021',[KelasXIController::class, 'patwajib2021']);
+Route::get('/11paswajib2022',[KelasXIController::class, 'paswajib2022']);
+Route::get('/11pasminat2022',[KelasXIController::class, 'pasminat2022']);
+Route::get('/11patwajib2023',[KelasXIController::class, 'patwajib2023']);
+Route::get('/11patminat2023',[KelasXIController::class, 'patminat2023']);
+
+// 42 KELAS XII
+Route::get('/12uswajib2019',[KelasXIIController::class, 'uswajib2019']);
+Route::get('/12pasminat2023',[KelasXIIController::class, 'pasminat2023']);
+Route::get('/12usminat2023',[KelasXIIController::class, 'usminat2023']);
+Route::get('/12uswajib2023',[KelasXIIController::class, 'uswajib2023']);
