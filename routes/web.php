@@ -160,6 +160,8 @@ Route::get('/create_polinomial01',[PolinomialController::class, 'create_polinomi
 // 36PELUANG
 Route::get('/peluang01',[PeluangController::class, 'peluang01']);
 Route::get('/createpeluang01',[PeluangController::class, 'createpeluang01']);
+Route::get('/ruangsampel',[PeluangController::class, 'ruangsampel']);
+Route::get('/create_ruangsampel',[PeluangController::class, 'create_ruangsampel']);
 
 // 40 KELAS X
 Route::get('/10patwajib2023',[KelasXController::class, 'patwajib2023']);

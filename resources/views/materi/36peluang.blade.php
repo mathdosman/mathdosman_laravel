@@ -12,8 +12,7 @@
   <ol class="list-group list-group-numbered">
     <a href="/ruangsampel" class="list-group-item list-group-action">Ruang Sampel dan Titik Sampel</a>
     <a href="/peluang01" class="list-group-item list-group-action">Peluang - Paket 01</a>
-    <a href="#" class="list-group-item list-group-action">Kejadian Saling Lepas</a>
-    <a href="#" class="list-group-item list-group-action">Kejadian Saling Bebas</a>
+    <a href="/peluang02" class="list-group-item list-group-action">Peluang - Paket 02</a>
   </ol>
   </div>
 </div>
